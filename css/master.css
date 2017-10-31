@@ -11,8 +11,8 @@ a.social {
   font-family: lemonmilk, helvetica, sans-serif;
   text-decoration: none;
   color: black;
-  font-size:4.5rem;
-  line-height: 5.3rem;
+  font-size:4.5rem; /*72px*/
+  line-height: 5.3rem; /*85 px*/
   margin-right:.3em;
 }
 
@@ -22,7 +22,6 @@ a.social:hover, a.back:hover {
 a.social:active, a.back:active {
   color:red !important;
   opacity:.6 !important;
-
 }
 
 
