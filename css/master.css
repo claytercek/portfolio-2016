@@ -1,0 +1,100 @@
+@font-face {
+font-family: "lemonmilk";
+src:url("../fonts/lemonmilk.woff2") format("woff2"),
+    url("../fonts/lemonmilk.woff") format("woff") }
+
+html {
+  font-size: 100%;
+}
+
+a.social {
+  font-family: lemonmilk, helvetica, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size:4.5rem;
+  line-height: 5.3rem;
+  margin-right:.3em;
+}
+
+a.social:hover, a.back:hover {
+  opacity: .5;
+}
+a.social:active, a.back:active {
+  color:red !important;
+  opacity:.6 !important;
+
+}
+
+
+a.back {
+  font-family: lemonmilk, helvetica, sans-serif;
+  text-decoration: none;
+  font-size:4.5rem;
+  line-height: 5.3rem;
+}
+
+main {
+  width:80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  line-height: 1.6rem;
+  text-align: left;
+}
+
+h1 {
+  font-family: lemonmilk, helvetica, sans-serif;
+  font-size: 3rem;
+}
+h2 {
+  font-family: lemonmilk, helvetica, sans-serif;
+  font-size: 2rem;
+}
+p {
+  font-family:verdana, sans-serif;
+}
+
+
+a#Facebook {
+  color: #3b5998;
+}
+a#Instagram {
+  color: #c13584;
+}
+a#Email {
+  color: #dd4b39;
+}
+a#Behance {
+  color: #1769ff;
+}
+a#Vimeo {
+  color: #1ab7ea;
+}
+a#Linkedin {
+  color: #0077b5;
+}
+a#Youtube {
+  color: #ff0000;
+}
+a#Twitter {
+  color: #1da1f2;
+}
+a#Resume, a#resumeback {
+  color: #ffb82b;
+}
+a#About, a#aboutback {
+  color: #63bc4f;
+}
+a#Portfolio {
+  color: #ca59db;
+}
+
+
+div#homenav {
+  width: 80%;
+  margin-left:10%;
+  margin-top: 10%;
+}
+
+.center-vertical {
+  /*I have no clue how to do this*/
+}
