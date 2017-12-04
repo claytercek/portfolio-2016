@@ -2,16 +2,26 @@
   box-sizing: border-box;
 }
 
+/* FONTS */
 @font-face {
   font-family: 'quicksand-regular';
-  src: url('../fonts/quicksand-regular.woff2') format('woff2'), url('../fonts/quicksand-regular.woff') format('woff');
+  src: url('../fonts/quicksand-regular.woff2') format('woff2'),
+       url('../fonts/quicksand-regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'quicksand-bold';
-  src: url('../fonts/quicksand-bold.woff2') format('woff2'), url('../fonts/quicksand-bold.woff') format('woff');
+  src: url('../fonts/quicksand-bold.woff2') format('woff2'),
+       url('../fonts/quicksand-bold.woff') format('woff');
+
 }
 
+@font-face {
+  font-family: 'futura';
+  src: url('../fonts/futura.woff2') format('woff2'),
+       url('../fonts/futura.woff') format('woff');
+
+}
 a {
   text-decoration: none;
 }
@@ -160,7 +170,8 @@ main {
 
 #navlinks a h1 {
   color: white;
-  font-family: quicksand-regular, helvetica, sans-serif;
+  font-family: futura, helvetica, sans-serif;
+  text-transform: uppercase;
   font-size: 3rem;
   font-weight: normal;
   position: relative;
@@ -171,7 +182,8 @@ main {
 header a {
   color: white;
   display: inline;
-  font-family: quicksand-regular, helvetica, sans-serif;
+  font-family: futura, helvetica, sans-serif;
+  text-transform: uppercase;
   font-size: 1.75rem;
   margin: 2rem;
   text-decoration: none;
@@ -273,10 +285,10 @@ section.video {
 
 
 
-iframe {
+/*iframe {
   border: 2px solid white;
   border-radius: 2px;
-}
+}*/
 
 .image-column {
   float: left;
