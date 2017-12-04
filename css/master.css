@@ -200,13 +200,13 @@ header {
 #headerbackground {
   background: black;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(down, black, transparent);
+  background: -webkit-linear-gradient(down, black 5%, transparent);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(down, black, transparent);
+  background: -o-linear-gradient(down, black 5%, transparent);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(down, black, transparent);
+  background: -moz-linear-gradient(down, black 5%, transparent);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, black, transparent);
+  background: linear-gradient(to bottom, black 5%, transparent);
   height: 9rem;
   position: fixed;
   width: 100%;
@@ -254,7 +254,7 @@ ul li {
 
 .fa {
   color: white;
-  margin: 0rem 1.3rem;
+  margin: 0rem 1rem;
 }
 
 .fa:hover {
@@ -305,4 +305,11 @@ section.video {
 .center {
   margin: 0 auto;
   width:70%;
+}
+
+a.employer {
+  color:white;
+}
+a.employer:hover {
+  color:#61f;
 }
