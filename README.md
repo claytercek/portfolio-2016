@@ -1,3 +1,8 @@
-# ctercek.com
+## ctercek.com
 
-Inspiration: https://web.archive.org/web/20111010043026/http://www.helloauan.com:80/
+##### Basic portfolio site with 5 main pages:
+- Home
+- Videos
+- Images
+- Résumé
+- About
