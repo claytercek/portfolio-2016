@@ -6,6 +6,9 @@
 # Icon must end with two \r
 Icon
 
+#Images
+*.jpg
+*.png
 
 # Thumbnails
 ._*
