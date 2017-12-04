@@ -178,10 +178,10 @@ header a {
 }
 
 header {
-  left: 50%;
-  margin-left: -400px;
-  margin-top: 2%;
+  margin-top:2%;
   position: fixed;
+  text-align: center;
+  width:100%;
   z-index: 10;
 }
 
@@ -280,13 +280,13 @@ iframe {
 
 .image-column {
   float: left;
-  margin:0 2rem;
-  width:42%;
+  margin:0 2.5vw;
+  width:calc(50% - 5vw);
 }
 .image-column img {
   display: block;
   height: auto;
-  margin: 4rem 0;
+  margin: 5vw 0;
   width:100%;
 }
 
