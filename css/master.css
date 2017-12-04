@@ -60,10 +60,7 @@ main {
   width: 75vw;
 }
 
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .arrow {
   -ms-transform: rotate(45deg);
@@ -88,57 +85,76 @@ main {
 }
 
 #navlinks a {
-  background-color: black;
   float: left;
   height: 100vh;
   opacity: 1;
+  padding-top: 2rem;
   text-align: center;
   text-decoration: none;
-  transition: opacity .2s ease;
+  transition: padding-top .6s ease, opacity .3s ease;
   vertical-align: top;
-  width: 33.3333%;
+  width: 25%;
 }
 
 #navlinks a:hover {
   opacity: .9;
+  padding-top: 0rem;
+}
+#navlinks {
+  background-color: white;
+  height:100vh;
+  width:100vw;
+}
+
+#navlinks #images {
+  background: #F6C51F;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(up, #FF7530, #F6C51F);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(up, #FF7530, #F6C51F);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(up, #FF7530, #F6C51F);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, #FF7530, #F6C51F);
+  /* Standard syntax */
 }
 
 #navlinks #videos {
-  background: #44f120;
+  background: #24e110;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(down, #44f140, yellow);
+  background: -webkit-linear-gradient(down, #24e110, #EFF61F);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(down, #44f120, yellow);
+  background: -o-linear-gradient(down, #24e110, #EFF61F);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(down, #44f120, yellow);
+  background: -moz-linear-gradient(down, #24e110, #EFF61F);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, #44f120, yellow);
+  background: linear-gradient(to bottom, #24e110, #EFF61F);
   /* Standard syntax */
 }
 
 #navlinks #resume {
-  background: #e84df7;
+  background: #E657FF;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(down, #e84df7, #f74d76);
+  background: -webkit-linear-gradient(down, #E657FF, #f74d76);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(down, #e84df7, #f74d76);
+  background: -o-linear-gradient(down, #E657FF, #f74d76);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(down, #e84df7, #f74d76);
+  background: -moz-linear-gradient(down, #E657FF, #f74d76);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, #e84df7, #f74d76);
+  background: linear-gradient(to bottom, #E657FF, #f74d76);
   /* Standard syntax */
 }
 
 #navlinks #about {
   background: #1b8bff;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(down, #1b8bff, #4bceff);
+  background: -webkit-linear-gradient(down, #1b8bff, #7bceff);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(down, #1b8bff, #4bceff);
+  background: -o-linear-gradient(down, #1b8bff, #7bceff);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(down, #1b8bff, #4bceff);
+  background: -moz-linear-gradient(down, #1b8bff, #7bceff);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom, #1b8bff, #4bceff);
+  background: linear-gradient(to bottom, #1b8bff, #7bceff);
   /* Standard syntax */
 }
 
@@ -163,7 +179,7 @@ header a {
 
 header {
   left: 50%;
-  margin-left: -320px;
+  margin-left: -400px;
   margin-top: 2%;
   position: fixed;
   z-index: 10;
@@ -191,7 +207,11 @@ header #home:hover {
 }
 
 header #videos:hover {
-  color: #44f120;
+  color: #24e110;
+}
+
+header #images:hover {
+  color: #FF7530;
 }
 
 header #resume:hover {
@@ -251,7 +271,26 @@ section.video {
   width: 40rem;
 }
 
-hr {
-  margin-bottom: 6rem;
-  margin-top: 2rem;
+
+
+iframe {
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.image-column {
+  float: left;
+  margin:0 2rem;
+  width:42%;
+}
+.image-column img {
+  display: block;
+  height: auto;
+  margin: 4rem 0;
+  width:100%;
+}
+
+.center {
+  margin: 0 auto;
+  width:70%;
 }
