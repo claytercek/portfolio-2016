@@ -22,6 +22,7 @@
        url('../fonts/futura.woff') format('woff');
 
 }
+
 a {
   text-decoration: none;
 }
@@ -92,7 +93,7 @@ main {
 }
 .arrow-wrapper {
   position: absolute;
-  top: 75%;
+  top: 85%;
   left:50%;
   transform: translate(-50%, 0);
   width:120px;
