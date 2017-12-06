@@ -34,7 +34,7 @@ html {
 main {
   background-color: black;
   min-height: 100vh;
-  padding: 15vh 0;
+  padding: 15vh 0 0 0;
   width: 100vw;
 }
 
@@ -42,12 +42,12 @@ main {
   color: white;
   font-family: quicksand-regular, helvetica, sans-serif;
   font-size: 3rem;
-  left: 12.5vw;
   line-height: 3.5rem;
   position: absolute;
   text-align: right;
   top: 50%;
-  transform: translate(0%, -50%);
+  left:50%;
+  transform: translate(-50%, -50%);
   width: 75vw;
 }
 
@@ -55,11 +55,12 @@ main {
   color: white;
   font-family: quicksand-regular, helvetica, sans-serif;
   font-size: 1.3rem;
-  left: 12.5vw;
   position: absolute;
   top: 50%;
-  transform: translate(0%, -50%);
+  left:50%;
+  transform: translate(-50%, -50%);
   width: 75vw;
+  max-width: 900px;
 }
 
 .resume-text {
@@ -68,6 +69,7 @@ main {
   font-size: 1.3rem;
   margin: auto;
   width: 75vw;
+  max-width: 900px;
 }
 
 
@@ -84,12 +86,19 @@ main {
   left: 50%;
   margin: -20px 0 0 -20px;
   position: absolute;
-  top: 85%;
   transform: rotate(45deg);
   width: 40px;
+  top:50px;
 }
-
-.arrow:hover {
+.arrow-wrapper {
+  position: absolute;
+  top: 75%;
+  left:50%;
+  transform: translate(-50%, 0);
+  width:120px;
+  height:120px;
+}
+.arrow-wrapper:hover .arrow {
   border-bottom: 2px #61f solid;
   border-right: 2px #61f solid;
 }
@@ -98,7 +107,7 @@ main {
   float: left;
   height: 100vh;
   opacity: 1;
-  padding-top: 2rem;
+  padding-top: 3rem;
   text-align: center;
   text-decoration: none;
   transition: padding-top .6s ease, opacity .3s ease;
@@ -177,6 +186,7 @@ main {
   position: relative;
   text-decoration: none;
   top: 40%;
+  text-align: center;
 }
 
 header a {
@@ -270,18 +280,20 @@ b {
   font-family: quicksand-bold, helvetica, sans-serif;
 }
 
-section.video h1 {
+h1 {
   color: white;
   font-family: quicksand-regular, helvetica, sans-serif;
   font-size: 2rem;
   text-align: left;
 }
 
-section.video {
-  margin: 5rem auto;
-  text-align: center;
-  width: 40rem;
+p {
+  color:white;
+  font-family: quicksand-regular, helvetica, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 }
+
 
 
 
@@ -292,24 +304,61 @@ section.video {
 
 .image-column {
   float: left;
-  margin:0 2.5vw;
-  width:calc(50% - 5vw);
+  width:calc(50% - 2.5vw);
 }
-.image-column img {
-  display: block;
-  height: auto;
-  margin: 5vw 0;
+
+.image-column:first-child{
+  margin-right: 2.5vw;
+}
+.image-column:last-child{
+  margin-left: 2.5vw;
+}
+
+
+.image-column a {
+  display: inline-block;
+  margin-bottom: 5vw;
   width:100%;
+  overflow: hidden;
+}
+
+.image-column a img {
+  width:100%;
+  height: auto;
+  transition: transform .4s ease;
+  vertical-align: middle;
+}
+
+.image-column a img:hover {
+  transform: scale(1.1);
 }
 
 .center {
   margin: 0 auto;
-  width:70%;
+  width:75%;
+  max-width:900px;
 }
 
 a.employer {
   color:white;
 }
-a.employer:hover {
-  color:#61f;
+a.employer:hover p{
+  color:#61f !important;
+}
+
+.embed-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
